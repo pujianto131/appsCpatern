@@ -2,7 +2,17 @@
 #include <string>
 using namespace std;
 
-int pola(int x){
+int pola1_persegi(int nilai){
+    for (int i=0; i<=nilai; i++){
+        for (int j=0; j<=nilai; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+int pola2_diamond(int x){
     int i,j;
     int n=x-1;
     for (i = 0; i < (2 * n) + 1; i++) {
@@ -37,4 +47,5 @@ int pola(int x){
         }
     }
     cout<< endl;
+    return 0;
 }
